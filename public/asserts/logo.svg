@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c84a"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8962e"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e7a54"/>
+      <stop offset="100%" stop-color="#0f4a32"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Logo mark — octagonal medallion -->
+  <g transform="translate(40, 40)">
+    <!-- Outer octagon -->
+    <polygon points="0,-28 19.8,-19.8 28,0 19.8,19.8 0,28 -19.8,19.8 -28,0 -19.8,-19.8"
+             fill="url(#greenGrad)" />
+    <!-- Gold ring -->
+    <polygon points="0,-28 19.8,-19.8 28,0 19.8,19.8 0,28 -19.8,19.8 -28,0 -19.8,-19.8"
+             fill="none" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <!-- Inner circle -->
+    <circle cx="0" cy="0" r="19" fill="none" stroke="#d4af37" stroke-width="0.8" stroke-opacity="0.5"/>
+    <!-- Arabic Quran symbol (ﷺ simplified as ق) -->
+    <text x="0" y="9"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="22"
+          text-anchor="middle"
+          fill="url(#goldGrad)"
+          filter="url(#softGlow)">ق</text>
+    <!-- Tiny decorative star points -->
+    <circle cx="0" cy="-22" r="1.2" fill="#d4af37" opacity="0.9"/>
+    <circle cx="22" cy="0" r="1.2" fill="#d4af37" opacity="0.9"/>
+    <circle cx="0" cy="22" r="1.2" fill="#d4af37" opacity="0.9"/>
+    <circle cx="-22" cy="0" r="1.2" fill="#d4af37" opacity="0.9"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(82, 0)">
+    <!-- "Quran" in English -->
+    <text x="0" y="34"
+          font-family="'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif"
+          font-size="28"
+          font-weight="600"
+          letter-spacing="3"
+          fill="#1a1a1a">QURAN</text>
+
+    <!-- Thin gold rule -->
+    <line x1="2" y1="41" x2="178" y2="41" stroke="url(#goldGrad)" stroke-width="1"/>
+
+    <!-- Tagline -->
+    <text x="0" y="56"
+          font-family="'Palatino Linotype', Palatino, Georgia, serif"
+          font-size="10"
+          letter-spacing="4"
+          fill="#6b7c6e">THE NOBLE READING</text>
+
+    <!-- Arabic subtitle: القرآن الكريم -->
+    <text x="180" y="38"
+          font-family="Georgia, serif"
+          font-size="16"
+          text-anchor="end"
+          fill="#d4af37"
+          opacity="0.85">الكريم</text>
+  </g>
+</svg>
