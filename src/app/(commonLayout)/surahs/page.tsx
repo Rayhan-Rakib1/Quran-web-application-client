@@ -131,7 +131,7 @@ const SurahsPage = () => {
       <aside className="w-80 border-r border-zinc-800 overflow-y-auto hidden md:block">
         <div className="p-4 border-b border-zinc-800">
           <h2 className="text-lg font-semibold">Surahss</h2>
-          <p className="text-xs text-gray-400">114 Chapterss</p>
+          <p className="text-xs text-gray-400">114 Chapters</p>
         </div>
 
         <div className="flex flex-col">
