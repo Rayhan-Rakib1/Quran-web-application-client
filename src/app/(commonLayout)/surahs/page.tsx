@@ -147,7 +147,7 @@ const SurahsPage = () => {
               </div>
 
               <span className="text-xs text-gray-500">
-                {s.ayahs} Ayahsss
+                {s.ayahs} Ayahss
               </span>
             </Link>
           ))}
